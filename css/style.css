@@ -1,5 +1,6 @@
 /* HTML ELEMENTS */
-body,html{margin:0; font-family:arial;}
+body,html{margin:0; font-family:arial;display:block;
+overflow:auto;height:100%;}
 html{
   padding-top:10px;
   background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #7db9e8 100%); /* FF3.6-15 */
@@ -8,12 +9,13 @@ html{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
 }
 
-header img{width:960px;margin-bottom:-5px;}
-main{padding:10px;}
+header img{width:100%;margin-bottom:-5px;}
+main{padding:5px;}
+
 /* ID ELEMENTS */
 #wrap{
-  width:960px;
-  margin: 0 auto;
+  width:90%;
+  margin: 20px auto;
   background-color:white;
   -webkit-box-shadow: 0px 15px 40px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 15px 40px 0px rgba(0,0,0,0.75);
@@ -36,7 +38,6 @@ main{padding:10px;}
     padding:10px;
 }
 #nav li:hover{
-    display:inline;
     padding:10px;
     background-color:blue;
 }
@@ -44,8 +45,31 @@ main{padding:10px;}
     display:inline-block;
     color:white;
 }
+#menuControl{
+  background:none;
+  color:#fff;
+  border:0;
+  font-size:25px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  display:none;
+  height:40px;
+}
 
 /* CLASS ELEMENTS */
 .active{
   background-color:blue;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 720px) {
+    #nav{display:none;}
+    #nav li{display:block;}
+    #menuControl{display:block;background-color:#0000CC; width:100%}
+}
+@media screen and (min-width: 720px) {
+    #nav li{display:inline !important;}
+    #nav {display:block !important;}
 }
