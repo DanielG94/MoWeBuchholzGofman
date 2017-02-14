@@ -8,7 +8,7 @@
   	<meta charset=utf-8 />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   	<title>Pflegedienst Schal & Ke Admininterface</title>
-  	<link rel="stylesheet" type="text/css" media="screen" href="css/admin.css?v=1" />
+  	<link rel="stylesheet" type="text/css" media="screen" href="css/admin.min.css?v=2" />
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
   </head>

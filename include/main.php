@@ -1,18 +1,21 @@
 <h1> Schal & Ke Home </h1>
 <div>
   <p>
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    Herzlich Willkommen auf der Internetseite des Pflegedienstes Schal & Ke.
   </p>
   <p>
-    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    Unser Pflegedienst existiert seit 2016 und Sie finden uns Mitten im Herzen der königsblauen Veltins Arena auf Schalke.
+    Unser Ziel ist es, mit Ihnen gemeinsam die richtige Unterstützung zu finden.
   </p>
   <p>
-    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+    Wir möchten mit Ihnen gemeinsam die richtige Unterstützung finden und erstellen mit Ihnen Ihr individuelles Pflegekonzept.
+    Dies gilt sowohl für die Organisation als auch für die Finanzierung der Pflege und Betreuung. Gerne beraten wir Sie unverbindlich
+     und kostenlos bei Ihnen zu Hause, in unseren Büroräumen oder bereits im Krankenhaus.
   </p>
   <p>
-    Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-  </p>
-  <p>
-    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.
+    Wir sind ein Team engagierter und berufserfahrener Kranken- und Altenpfleger/innen. Seit vielen Jahren unterstützen und betreuen
+    wir gemeinsam Menschen in besonderen Lebenslagen. Wir möchten unsere Patienten nicht nur individuell unterstützen, sondern möchten
+    auch eine qualitativ hochwertige Pflege und Beratung leisten. Dies stellen wir sicher durch regelmäßige Fort- und Weiterbildung
+    aller Mitarbeiter.
   </p>
 </div>

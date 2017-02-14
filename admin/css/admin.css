@@ -59,7 +59,7 @@ button{
   font-weight: bold;
 }
 table{width:100%;text-align:left;}
-table td{width:50%;}
+table td{width:20%;}
 /* ID ELEMENTS */
 #header{
   background-color:#0000bb;
@@ -117,9 +117,9 @@ table td{width:50%;}
   -webkit-order: 0;
   -ms-flex-order: 0;
   order: 0;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
+  -webkit-flex: 1 1 50%;
+  -ms-flex: 1 1 50%;
+  flex: 1 1 50%;
   -webkit-align-self: auto;
   -ms-flex-item-align: auto;
   align-self: auto;
@@ -127,8 +127,8 @@ table td{width:50%;}
 .application{
   background-color:#ededed;
   color:black;
-  width:90%;
   margin: 15px auto;
+  word-break:break-all;
 }
 .approve{background-color:green;}
 .deny{background-color:red;}
