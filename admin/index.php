@@ -10,8 +10,7 @@
   	<title>Pflegedienst Schal & Ke Admininterface</title>
   	<link rel="stylesheet" type="text/css" media="screen" href="css/admin.css?v=1" />
     <link rel="stylesheet" href="../css/font-awesome.min.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/ui/1.8.23/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
   </head>
   <body>
     <div id="wrap">
@@ -29,7 +28,6 @@
                       echo '<li><a href="#" class="active">Login</span></a></li>';
                     }else{
                       echo '
-                      <li><a href="?page=main">Statistiken</a></li>
                       <li><span>Bewerbungen</span></li>
                       <li><a href="?page=new">&nbsp;&nbsp;&nbsp;> Unbearbeitet</a></li>
                       <li><a href="?page=approved">&nbsp;&nbsp;&nbsp;> Angenommen</a></li>
@@ -71,10 +69,10 @@
                         include("include/logout.php");
                         break;
                       default:
-                        include("include/main.php");
+                        include("include/new.php");
                     }
                   }else{
-                    include("include/main.php");
+                    include("include/new.php");
                   }
                 }
               ?>

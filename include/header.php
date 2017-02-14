@@ -1,4 +1,4 @@
-<img src="../img/header.png" title="Pflegedienst Schal & Ke" id="header"/>
+<img src="../img/header-min.jpg" title="Pflegedienst Schal & Ke" id="header"/>
 <nav>
   <button id="menuControl" class="fa fa-bars"> </button>
   <ul id="nav">
