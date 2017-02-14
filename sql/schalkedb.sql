@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Erstellungszeit: 21. Nov 2016 um 14:17
+-- Erstellungszeit: 14. Feb 2017 um 10:57
 -- Server-Version: 10.1.16-MariaDB
--- PHP-Version: 7.0.9
+-- PHP-Version: 5.6.24
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -33,40 +33,18 @@ CREATE TABLE `applications` (
   `email` varchar(30) NOT NULL,
   `phone` int(15) NOT NULL,
   `application` varchar(100) NOT NULL,
-  `curriculum_vitae` varchar(100) NOT NULL,
   `application_date` date NOT NULL,
-  `application_approved` varchar(1) NOT NULL,
-  `position_id` int(6) NOT NULL
+  `approved` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Daten für Tabelle `applications`
 --
 
-INSERT INTO `applications` (`application_id`, `prename`, `surname`, `email`, `phone`, `application`, `curriculum_vitae`, `application_date`, `application_approved`, `position_id`) VALUES
-(1, 'Daniel', 'Buchholz', 'd.buchholz94@web.de', 123456789, 'C:/Applications/application_BuchholzDaniel.pdf', 'C:/Applications/curriculum_vitae_BuchholzDaniel.pdf', '2016-11-21', 'y', 1),
-(2, 'Daniel', 'Buchholz', 'd.buchholz94@web.de', 123456789, 'C:/Applications/application_BuchholzDaniel.pdf', 'C:/Applications/curriculumvitae_BuchholzDaniel.pdf', '2016-11-21', 'y', 1);
-
--- --------------------------------------------------------
-
---
--- Tabellenstruktur für Tabelle `positions`
---
-
-CREATE TABLE `positions` (
-  `position_id` int(6) NOT NULL,
-  `name` varchar(30) NOT NULL,
-  `description` varchar(500) NOT NULL,
-  `valid_until` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Daten für Tabelle `positions`
---
-
-INSERT INTO `positions` (`position_id`, `name`, `description`, `valid_until`) VALUES
-(1, 'Pflegekraft', 'Wir suchen eine engagierte Pflegekraft mit mindestens 5 Jahren Berufserfahrung...', '2017-01-30'),
-(2, 'Pflegekraft Aushilfe', 'Wir suchen eine engagierte Pflegekraft für ca. 20h/Woche, gerne auch nach Ausbildung...', '2016-12-24');
+INSERT INTO `applications` (`application_id`, `prename`, `surname`, `email`, `phone`, `application`, `application_date`, `approved`) VALUES
+(1, 'Daniel', 'Buchholz', 'd.buchholz94@web.de', 123456789, 'Sehr geehrte Damen und Herren,...', '2016-11-21', 1),
+(3, 'test', 'test', 'test', 1234, 'test', '2017-02-07', 0),
+(4, 'test2', 'test3', 'test', 12345, 'testtest', '2017-02-14', NULL);
 
 -- --------------------------------------------------------
 
@@ -98,19 +76,15 @@ INSERT INTO `role` (`role_id`, `role_name`, `role_description`) VALUES
 CREATE TABLE `users` (
   `user_id` int(6) NOT NULL,
   `username` varchar(30) NOT NULL,
-  `user_password` varchar(255) NOT NULL,
-  `valid_until` date NOT NULL,
-  `role_id` int(6) NOT NULL
+  `user_password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Daten für Tabelle `users`
 --
 
-INSERT INTO `users` (`user_id`, `username`, `user_password`, `valid_until`, `role_id`) VALUES
-(1, 'manfred', 'geheim', '2017-03-02', 2),
-(2, 'admin', 'admin', '2016-12-10', 1),
-(3, 'ulla', 'alles_x', '2017-11-29', 0);
+INSERT INTO `users` (`user_id`, `username`, `user_password`) VALUES
+(1, 'admin', '$2y$10$J5IybkHHqSIyBRT9zt2bJ.homD3k9hyVy.EwN5iOvOpHd8MRpVXnW');
 
 --
 -- Indizes der exportierten Tabellen
@@ -121,12 +95,6 @@ INSERT INTO `users` (`user_id`, `username`, `user_password`, `valid_until`, `rol
 --
 ALTER TABLE `applications`
   ADD PRIMARY KEY (`application_id`);
-
---
--- Indizes für die Tabelle `positions`
---
-ALTER TABLE `positions`
-  ADD PRIMARY KEY (`position_id`);
 
 --
 -- Indizes für die Tabelle `role`
@@ -148,12 +116,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT für Tabelle `applications`
 --
 ALTER TABLE `applications`
-  MODIFY `application_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
---
--- AUTO_INCREMENT für Tabelle `positions`
---
-ALTER TABLE `positions`
-  MODIFY `position_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `application_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT für Tabelle `role`
 --
@@ -163,7 +126,7 @@ ALTER TABLE `role`
 -- AUTO_INCREMENT für Tabelle `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `user_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
